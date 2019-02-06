@@ -29,5 +29,9 @@ end
 end
 
 def selective_tweet_shortener(tweet_four)
-  tweet_four > 140 ? word_substituter(tweet_four) : tweet_four
+if tweet_four.chars.length > 140
+  word_substituter(tweet_four)
+else
+  tweet_four
+end
 end
