@@ -28,12 +28,6 @@ tweets.map do |phrase|
 end
 end
 
-def selective_tweet_shortener(tweet_two)
-  tweet_two.split(" ").map do |phrase|
-    if phrase.length > 140
-      word_substituter(phrase)
-    else phrase.length < 130
-      phrase 
-end
-end
+def selective_tweet_shortener(tweet_four)
+  tweet_four > 140 ? word_substituter(tweet_four) : tweet_four
 end
